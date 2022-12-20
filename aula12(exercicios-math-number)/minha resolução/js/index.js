@@ -1,0 +1,16 @@
+let num = parseFloat(prompt('Digite um número: '));
+let res = document.getElementById('res');
+let res1 = document.getElementById('res1')
+res.innerHTML = `Seu número é ${num}`;
+const raiz = (num ** 0.5);
+const int = Number.isInteger(num);
+const nan = Number.isNaN(num);
+const arredonBaix = Math.floor(num);
+const arredonCima = Math.ceil(num);
+const com2Casas = num.toFixed(2);
+res1.innerHTML = `Raiz quadrada: ${raiz}<br>`
+res1.innerHTML +=`${num} é inteiro: ${int} <br>`
+res1.innerHTML += `É NaN: ${nan} <br>`
+res1.innerHTML += `Arredondando para baixo: ${arredonBaix} <br>`
+res1.innerHTML += `Arredondando para cima: ${arredonCima} <br>`
+res1.innerHTML += `Com duas casas decimais: ${com2Casas}`

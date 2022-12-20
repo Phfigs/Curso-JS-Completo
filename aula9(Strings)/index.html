@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios aula 13</title>
+</head>
+<body>
+    Pedro Henrique Figueiredo
+    <script>
+    const nome = prompt('Digite seu nome completo:');
+    const qtdletras = nome.length;
+    const segletra = nome[1];
+    const primLetE = nome.indexOf('e');
+    const ultLetE = nome.lastIndexOf('e');
+    const ult3Let = nome.slice(-3);
+    const palavras = nome.split(' ');
+    const maius = nome.toUpperCase();
+    const minus = nome.toLowerCase();
+    document.body.innerHTML = `O seu nome é <strong>${nome}</strong><br />`;
+    document.body.innerHTML += `Seu nome tem <strong>${qtdletras}</strong> letras <br />`;
+    document.body.innerHTML += `A segunda letra do seu nome é: <strong>${segletra}</strong> <br />`;
+    document.body.innerHTML += `Qual o primeiro índice da letra e no seu nome? <strong>${primLetE}</strong> <br />`;
+    document.body.innerHTML += `Qual o último índice da letra e no seu nome? <strong>${ultLetE}</strong> <br />`;
+    document.body.innerHTML += `As últimas 3 letras do seu nome são: <strong>${ult3Let}</strong> <br />`;
+    document.body.innerHTML += `As palavras do seu nome são: <strong>${palavras}</strong> <br />`;
+    document.body.innerHTML += `Seu nome com letras maiúsculas: <strong>${maius}</strong> <br />`;
+    document.body.innerHTML += `Seu nome com letras minúsculas: <strong>${minus}</strong> <br />`;
+    </script>
+</body>
+</html>
