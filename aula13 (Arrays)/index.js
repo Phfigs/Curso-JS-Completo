@@ -4,7 +4,7 @@ const alunos = ['Luiz', 'Maria', 'João'];
 //console.log(typeof alunos); //retorna object pois array é um tipo de objeto.
 //console.log(alunos instanceof Array); //pergunta se alunos é uma instacia de Array, se é um Array, retorna true ou false
 
-//console.log(alunos.slice(0, -2)); //para aparecer só uma fatia do array, determinada entre ()
+console.log(alunos.slice(0, -2)); //para aparecer só uma fatia do array, determinada entre ()
 
 //delete alunos[1]; //para remover um elemento sem alterar os indices dos outros porém o elemento fica vazio.
 // O elemento deletado recebe >> undefined 
