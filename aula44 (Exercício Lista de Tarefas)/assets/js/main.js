@@ -38,8 +38,6 @@ function criaTarefa(textoInput){
     salvarTarefas();
 }
 
-
-
 btnTarefa.addEventListener('click', function(){
     if (!inputTarefa.value) return;
     criaTarefa(inputTarefa.value);
